@@ -22,7 +22,7 @@ class BlogHome(ListView):
 @method_decorator(login_required, name='dispatch')
 class BlogPostCreate(CreateView):
     model = BlogPost
-    fields = ['title', 'content', ]
+    fields = ['title', 'content', 'thumbnail', ]
     template_name = 'posts/blogpost_create.html'
 
 
